@@ -1,0 +1,296 @@
+
+	<link rel="stylesheet" href="css/signup.css">
+	<link rel="stylesheet" href="css/login.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+   	<div class="container vertical-center text-center wow fadeInDown" style="background: white; font-size: 38px; font-weight: lighter;font-family: 'Open Sans', sans-serif; margin-top:25px;">
+        	Join the Global Platform for <br />Startup Investing<br />
+            <hr />
+            <p style="font-size:13px;">Please select the role that best describes you.</p>
+<button class="btn sign-btn" ng-click="register()">I'm an Entrepreneur</button><br />
+                          
+
+
+      	<button class="btn sign-btn" ng-click="investor_register()"> I belong to an Investment Organization </button>
+		<br /><p><br /></p>
+        <hr />
+        <p style="font-size:13px;">Already registered? <a href="/signin">Sign In</a></p>
+
+
+        </div>
+	<br /><br /><br /><br /><br /><br />
+    
+    
+    
+    
+    
+    
+
+
+
+<!--   	<div class="container vertical-center text-center wow fadeInDown" style="background: white; font-size: 38px; font-weight: lighter;font-family: 'Open Sans', sans-serif; margin-top:25px;">
+        	Join the Global Platform for <br />Startup Investing<br />
+            <hr />
+            <p style="font-size:13px;">Please select the role that best describes you.</p>
+<button class="btn sign-btn" data-toggle="modal" data-target="#myModal">I'm an Entrepreneur</button><br /><p></p>
+                          
+
+
+      	<button class="btn sign-btn" data-toggle="modal" data-target="#invModal"> I belong to an Investment Organization </button><br />
+
+        </div>
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="tabs clearfix">
+                
+                    <div class="signup col-xs-6">
+                        <span class="hidden-xs">Create Account</span>
+                        <span class="visible-xs">Sign Up</span>
+                    </div>
+                        <a class="login background col-xs-6" href="/signin" onclick="$('#myModal').modal('hide');">
+                            Login
+                        </a>
+                        
+        	
+      </div>
+      <div class="modal-body">
+            		    <div class="partnership-card-section">
+                
+                    <p class="instructions">
+                        Join FundersClub today! FundersClub is the world's first online venture capital firm and a community of investors, entrepreneurs and enthusiasts of private investing. To get started, choose your preferred login method:
+                    </p>
+                
+                
+                    <div class="social-buttons">
+                        
+                        <div class="social-button">
+                            <a class="btn linkedin" href="/accounts/linkedin/login/?next=%2Faccounts%2Fpost-login%2F" data-track-click="linkedin-signup">
+                                <i class="fa fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+
+                        <div class="social-button">
+                            <a class="btn facebook" href="/accounts/facebook/login/?method=oauth2&next=%2Faccounts%2Fpost-login%2F" data-track-click="fb-signup">
+                                <i class="fa fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                        </div>
+
+                        <div class="social-button">
+                            <a class="btn google" href="/accounts/google/login/?method=oauth2&next=%2Faccounts%2Fpost-login%2F" data-track-click="google-signup">
+                                <i class="fa fa-google"></i>
+                                <span>Google</span>
+                            </a>
+                        </div>
+                    </div>
+                
+                <form data-signup-form class="form">
+                    
+                        <p>Or, sign up with:</p>
+                    
+                    <input type='hidden' name='csrfmiddlewaretoken' value='AJyNISrzbeI6F2PrHV0hiZY57as81gRY' />
+
+                    
+                    <div class="form-group first-name
+                            "><input type="username" name="username"
+                                class="form-control input-lg"
+                                placeholder="First Name" id="fist_name" ng-model="user.username"
+                                value=""></div><div class="form-group last-name
+                            ">
+                      <input type="text" name="company"
+                                class="form-control input-lg"
+                                placeholder="Startup Name" id="company_name"
+                                ng-model="user.company" value="" /></div>
+                                <div class="form-group loc">
+                      <input type="text" name="loc"
+                                class="form-control input-lg"
+                                placeholder="Location" id="location_name"
+                                ng-model="user.loc" value="" />
+                                
+                    </div>
+                    <div class="form-group industry">
+                    	  <input type="text" name="industry"
+                                class="form-control input-lg"
+                                placeholder="Industry" id="industry"
+                                ng-model="user.industry" value="" />
+                    
+                    
+                    </div>
+                    
+                    <div class="form-group pitch-line">
+                    	  <input type="text" name="pitch_line"
+                                class="form-control input-lg"
+                                placeholder="Pitch Line" id="pitch"
+                                ng-model="user.pitch_line" value="" />
+                    
+                    
+                    </div>
+                    
+                    <div class="form-group
+                            "><input type="email" name="email" class="form-control input-lg"
+                                placeholder="Email address" id="email"
+                                value="" ng-model="user.email"></div><div class="form-group
+                                "><input type="password" name="pwd" placeholder="Password"
+                                    class="form-control input-lg"  ng-model="password"></div><div class="form-group
+                                "><input type="password" name="password2" placeholder="Verify Password"
+                                    class="form-control input-lg"></div><input name="mixpanel_anonymous_id" type="hidden" value=""><button ng-click="signup()"; class="btn btn-warning btn-block no-margins"
+                            type="submit" data-signup-submit onclick="$('#myModal').modal('hide');">
+                        Sign Up
+                        <i data-signup-spinner class="fa fa-cog fa-spin"
+                                style="display: none"></i></button>
+                </form>
+            </div>
+        </div>
+	            
+		                
+            </div>
+
+                
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<div id="invModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+            <div class="tabs clearfix">
+                
+                    <div class="signup col-xs-6">
+                        <span class="hidden-xs">Create Account</span>
+                        <span class="visible-xs">Sign Up</span>
+                    </div>
+                    
+                        <a class="login background col-xs-6" href="/accounts/login/">
+                            Login
+                        </a>
+        			            <div class="partnership-card-section">
+                
+                    <p class="instructions">
+                        Join FundersClub today! FundersClub is the world's first online venture capital firm and a community of investors, entrepreneurs and enthusiasts of private investing. To get started, choose your preferred login method:
+                    </p>
+                
+                
+                    <div class="social-buttons">
+                        
+                        <div class="social-button">
+                            <a class="btn linkedin" href="/accounts/linkedin/login/?next=%2Faccounts%2Fpost-login%2F" data-track-click="linkedin-signup">
+                                <i class="fa fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+
+                        <div class="social-button">
+                            <a class="btn facebook" href="/accounts/facebook/login/?method=oauth2&next=%2Faccounts%2Fpost-login%2F" data-track-click="fb-signup">
+                                <i class="fa fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                        </div>
+
+                        <div class="social-button">
+                            <a class="btn google" href="/accounts/google/login/?method=oauth2&next=%2Faccounts%2Fpost-login%2F" data-track-click="google-signup">
+                                <i class="fa fa-google"></i>
+                                <span>Google</span>
+                            </a>
+                        </div>
+                    </div>
+                
+                <form data-signup-form class="form">
+                    
+                        <p>Or, sign up with:</p>
+                    
+                    <input type='hidden' name='csrfmiddlewaretoken' value='AJyNISrzbeI6F2PrHV0hiZY57as81gRY' />
+
+                    
+                    <div class="form-group first-name
+                            "><input type="username" name="username"
+                                class="form-control input-lg"
+                                placeholder="First Name" id="fist_name" ng-model="user.username"
+                                value=""></div><div class="form-group last-name
+                            ">
+                      <input type="text" name="company"
+                                class="form-control input-lg"
+                                placeholder="Startup Name" id="company_name"
+                                ng-model="user.company" value="" /></div>
+                                <div class="form-group loc">
+                      <input type="text" name="loc"
+                                class="form-control input-lg"
+                                placeholder="Location" id="location_name"
+                                ng-model="user.loc" value="" />
+                                
+                    </div>
+                    <div class="form-group industry">
+                    	  <input type="text" name="industry"
+                                class="form-control input-lg"
+                                placeholder="Industry" id="industry"
+                                ng-model="user.industry" value="" />
+                    
+                    
+                    </div>
+                    
+                    <div class="form-group pitch-line">
+                    	  <input type="text" name="pitch_line"
+                                class="form-control input-lg"
+                                placeholder="Pitch Line" id="pitch"
+                                ng-model="user.pitch_line" value="" />
+                    
+                    
+                    </div>
+                    
+                    <div class="form-group
+                            "><input type="email" name="email" class="form-control input-lg"
+                                placeholder="Email address" id="email"
+                                value="" ng-model="user.email"></div><div class="form-group
+                                "><input type="password" name="pwd" placeholder="Password"
+                                    class="form-control input-lg"  ng-model="password"></div><div class="form-group
+                                "><input type="password" name="password2" placeholder="Verify Password"
+                                    class="form-control input-lg"></div><input name="mixpanel_anonymous_id" type="hidden" value=""><button ng-click="signup()"; class="btn btn-warning btn-block no-margins"
+                            type="submit" data-signup-submit>
+                        Sign Up
+                        <i data-signup-spinner class="fa fa-cog fa-spin"
+                                style="display: none"></i></button>
+                </form>
+            </div>
+        </div>
+	            
+		                
+            </div>
+
+                
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+-->

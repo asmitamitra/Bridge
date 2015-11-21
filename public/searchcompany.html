@@ -1,0 +1,19 @@
+
+<link rel="stylesheet" href="stylesheets/signup.css">
+
+        	<br /><br />
+
+      		<div style="padding-top: 60px; font-size: 50px; color: #0F8791; text-align: center;" class="browse_by">
+      			Search By {{id}} Answers
+              </div>
+
+      		 <table align="center" class="browse_table">
+      					<tr ng-repeat="person in investors">
+      							<td><div style="font-size: 32px; color: #09C;">{{person.company}}</div><div style="padding-top: 2px; font-size: 24px;color: #787878;">{{person.industry}} , {{person.loc}}</div>
+                      <div style="padding-top: 2px; font-size: 18px;">{{person.website_url}}<br>{{person.employees}} Members<br><br>{{person.desc}}</div></td>
+
+      					</tr>
+
+      			</table>
+
+<button align="center" class="form-button" ng-click="follow()"> Follow</button>

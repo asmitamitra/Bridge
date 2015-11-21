@@ -1,0 +1,81 @@
+
+<link rel="stylesheet" href="css/signup.css" />
+<link rel="stylesheet" href="css/login.css">
+
+<br /><br /><br />
+
+ <div class="row">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-1
+                col-md-6 col-md-offset-2 col-lg-6 col-lg-offset-3">
+        <div class="partnership-card">
+            <div style="font-size: 24px; text-align:center;" class="tabs clearfix">
+                
+                 <a class="login background col-xs-6" href="/login">
+                            Login
+                        </a>
+                    
+                
+            </div>
+
+            <div class="partnership-card-section">
+                
+                    <p class="instructions" style="text-align:center;">
+                       Login using:
+                    </p>
+                
+                
+                    <div class="social-buttons" style="text-align:center;">
+                        
+                        <div class="social-button">
+                            <a class="btn linkedin" href="/accounts/linkedin/login/?next=%2Faccounts%2Fpost-login%2F" data-track-click="linkedin-signup">
+                                <i class="fa fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+
+                        <div class="social-button">
+                            <a class="btn facebook" href="/accounts/facebook/login/?method=oauth2&next=%2Faccounts%2Fpost-login%2F" data-track-click="fb-signup">
+                                <i class="fa fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                        </div>
+
+                        <div class="social-button">
+                            <a class="btn google" href="/accounts/google/login/?method=oauth2&next=%2Faccounts%2Fpost-login%2F" data-track-click="google-signup">
+                                <i class="fa fa-google"></i>
+                                <span>Google</span>
+                            </a>
+                        </div>
+                    </div>
+                
+                <form data-signup-form class="form">
+                    <br />
+                        <p>Or, your Username and password:</p>
+                    
+                    <input type='hidden' name='csrfmiddlewaretoken' value='AJyNISrzbeI6F2PrHV0hiZY57as81gRY' />
+
+                    
+                    
+                    <div class="form-group first-name
+                            "><input type="username" name="username"
+                                class="form-control input-lg"
+                                placeholder="Username" id="username" ng-model="user.username"
+                                value="" required></div>
+                                
+                                
+                                <div class="form-group
+                                "><input type="password" name="pwd" placeholder="Password"
+                                    class="form-control input-lg"  ng-model="user.password" required></div>
+                                    <input name="mixpanel_anonymous_id" type="hidden" value=""><button ng-click="signin();" class="btn btn-warning btn-block no-margins"
+                            type="submit" data-signup-submit>
+                        Log In
+                        <i data-signup-spinner class="fa fa-cog fa-spin"
+                                style="display: none"></i></button>
+                </form>
+            </div>
+        </div>
+    
+</div></div>
+        </div>
+    </div>
+    

@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="stylesheets/signup.css">
+<link rel="stylesheet" href="stylesheets/browse.css">
+<hr style="margin-top: 1.22em; color: #3CF; opacity: 0.2;"/>
+    
+        
+		<div style="padding-top: 0.6em; font-size: 38px; color: #828282; font-weight: 20;text-align: left; margin-left: 2.7em;" class="browse_by">
+		<!--	Search {{id}} -->
+        Search
+        </div>
+
+	<!--<div class="browse-options">
+
+		<ul>
+			<li ng-click="browse_startup()">Startups</li>
+			<li ng-click="browse_investor()">Investing Organizations</li>
+		</ul>
+	</div>-->
+    
+    
+    <nav>
+    <a href="#">&nbsp;  All</a><br />
+    <a href="#" ng-click="browse_startup()">&nbsp;  Startups</a><br />
+    <a href="#" ng-click="browse_investor()">&nbsp;  Organizations</a><br />
+    </nav>
+
+
+
+
+		 <table align="center" class="browse_table">
+					<tr ng-repeat="person in startups">
+							<td ng-click="search(person.company, person.website_url)"><div style="font-size: 32px; color: #09C;">{{person.company}}</div><div style="padding-top: 2px; font-size: 24px;color: #787878;">{{person.industry}} , {{person.loc}}</div>
+                            <div style="padding-top: 2px; font-size: 15px;">{{person.website_url}}{{person.pitch_line}}</div></td>
+
+					</tr>
+
+			</table>

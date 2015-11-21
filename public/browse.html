@@ -1,0 +1,1096 @@
+ <link rel="stylesheet" href="css/signup.css">
+ <link rel="stylesheet" href="css/browse.css">
+
+ <div class="filters">
+        <div class="row">
+            <div class="col-xs-12 col-md-2">
+                <div class="hide-below-md text-right text-muted">
+                    <div class="form-control-static">Filter by:</div>
+                </div>
+                <div class="hide-above-sm text-muted text-left">
+                    Filter by:
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-2">
+                <select data-customer-type style="width: 100%" class="form-control" ng-model= "browse_by" ng-change="browse();">
+                    
+                        
+                            <option value="">All Companies</option>
+                        
+                    
+                        
+                            <option value="startups">Startups</option>
+                        
+                    
+                        
+                            <option value="investors" >Investors</option>
+                        
+                    
+                </select>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-2">
+                <select data-product-type style="width: 100%" class="form-control" ng-model="location" ng-change="location_browse();">
+                    
+                        
+                            <option value="">Location</option>
+                        
+                    
+                        
+                            <option value="delhi">Delhi</option>
+                        
+                    
+                        
+                            <option value="noida">Noida</option>
+                            
+                    
+                        
+                            <option value="mumbai">Mumbai</option>
+                        
+                    
+                        
+                            <option value="bangalore">Bangalore</option>
+                            
+                    
+                        
+                            <option value="pune">Pune</option>
+                        
+                    
+                        
+                            <option value="hyderabad">Hyderabad</option>
+                            
+                    
+                        
+                            <option value="kolkata">Kolkata</option>
+                        
+                    
+                        
+                            <option value="surat">Surat</option>
+                        
+                </select>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-2">
+                <select data-industry style="width: 100%" class="form-control" ng-model="industry" ng-change="industry_browse();">
+                    
+                    	   <option value="">Industry</option>
+                        
+                            <option value="media">Media Services</option>
+                        
+                            <option value="web">Web Services</option>
+                        
+                            <option value="health">Health Care Services</option>
+                        
+                            <option value="education">Education</option>
+                        
+                            <option value="food">Food And Drink</option>
+                        
+                            <option value="consumer">Consumer Services</option>
+                        
+                            <option value="it">IT Services</option>
+                        
+                            <option value="business">Business Services</option>
+                       
+                            <option value="finance">Financial Services</option>
+                        
+                    
+                </select>
+            </div>
+            <div class="hide-below-md col-md-2"></div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+
+
+
+		 <table align="center" class="browse_table">
+					<tr ng-repeat="person in startups track by $index">
+							<td ng-click="search(person.company, person.website_url)"><div style="font-size: 32px; color: #09C;">{{person.company}}</div><div style="padding-top: 2px; font-size: 24px;color: #787878;">{{person.industry}} , {{person.loc}}</div>
+                            <div style="padding-top: 2px; font-size: 15px;">{{person.website_url}}{{person.pitch_line}}</div></td>
+
+					</tr>
+
+			</table>
+ <div class="container primary-content-container our-portfolio"
+                 style=""
+                 >
+
+                
+                
+
+                
+                
+    <div class="fund-summary-group">
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="enterprise"
+                    data-product-type-val="software"
+                    data-business-model-val="subscription"
+                    data-industry-val="humanresources">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/talentbin/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/talentbin.png" alt="TalentBin"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>TalentBin</h3>
+                                <div class="fund-details-list">Human Resources</div>
+                                
+                                    <label class="label label-success">Acquired</label>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Talent search engine used by major Fortune 500 firms and recruiters for sourcing the best talent. [Acquired by Monster Worldwide NYSE:MWW]</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="consumer"
+                    data-product-type-val="software"
+                    data-business-model-val="transactionprocessing"
+                    data-industry-val="financialtechnology">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/coinbase/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/coinbase_bWxfPza.png" alt="Coinbase"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>Coinbase</h3>
+                                <div class="fund-details-list">Financial Technology</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Bitcoin, made simple.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="consumer"
+                    data-product-type-val="software"
+                    data-business-model-val="ecommerce"
+                    data-industry-val="personalcareandservices">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/instacart/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/instacart_OjyBLCs.png" alt="Instacart"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>Instacart</h3>
+                                <div class="fund-details-list">Personal Care &amp; Services</div>
+                                
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">1 hour delivery of groceries and more from Whole Foods, Safeway, Costco, and more.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="consumer"
+                    data-product-type-val="hardware"
+                    data-business-model-val="ecommerce"
+                    data-industry-val="consumerelectronics">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/thalmic/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/thalmic-labs.png" alt="Thalmic"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>Thalmic</h3>
+                                <div class="fund-details-list">Consumer Electronics</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">The next generation of gesture control.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="consumer"
+                    data-product-type-val="software"
+                    data-business-model-val="ecommerce"
+                    data-industry-val="retail">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/teespring/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/teespring_St4uquE.png" alt="Teespring"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>Teespring</h3>
+                                <div class="fund-details-list">Retail</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Crowdfunded custom apparel</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="consumer"
+                    data-product-type-val="software"
+                    data-business-model-val="ecommerce"
+                    data-industry-val="retail">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/soldsie/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/soldsie_nu3M4Qw.png" alt="Soldsie"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>Soldsie</h3>
+                                <div class="fund-details-list">Retail</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Online social commerce platform allowing brands, individuals, and merchants to sell directly within Facebook.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="enterprise"
+                    data-product-type-val="software"
+                    data-business-model-val="subscription"
+                    data-industry-val="informationsecurity">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/meldium/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/meldium_OlnebA1.png" alt="Meldium"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>Meldium</h3>
+                                <div class="fund-details-list">Information Security</div>
+                                
+                                    <label class="label label-success">Acquired</label>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Secure enterprise password and account management. (acquired by LogMeIn NASDAQ: LOGM)</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="enterprise"
+                    data-product-type-val="software"
+                    data-business-model-val="subscription"
+                    data-industry-val="informationtechnology">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/tinderbox/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/tinderbox.png" alt="Tinderbox"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>Tinderbox</h3>
+                                <div class="fund-details-list">Information Technology</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Cloud-based tool to sales teams that streamlines the creation, management, distribution, and tracking of presentations, sales proposals, and contracts.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="consumer"
+                    data-product-type-val="software"
+                    data-business-model-val="ecommerce"
+                    data-industry-val="foodandagriculture">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/spoonrocket/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/spoonrocket_FuN17S6.png" alt="SpoonRocket"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>SpoonRocket</h3>
+                                <div class="fund-details-list">Food &amp; Agriculture</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Next-generation fast food: yummy meals delivered in 10 minutes.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="consumer"
+                    data-product-type-val="software"
+                    data-business-model-val="ecommerce"
+                    data-industry-val="retail">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/trueandco/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/true-and-co.png" alt="True &amp; Co"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>True &amp; Co</h3>
+                                <div class="fund-details-list">Retail</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Online bra shopping.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="consumer"
+                    data-product-type-val="software"
+                    data-business-model-val="ecommerce"
+                    data-industry-val="personalcareandservices">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/move-loot/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/move-loot.png" alt="Move Loot"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>Move Loot</h3>
+                                <div class="fund-details-list">Personal Care &amp; Services</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Reimagining change in the home and office</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="consumer"
+                    data-product-type-val="software"
+                    data-business-model-val="ecommerce"
+                    data-industry-val="foodandagriculture">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/zesty/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/Zesty.png" alt="Zesty"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>Zesty</h3>
+                                <div class="fund-details-list">Food</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Zesty lets you order healthy meals from your favorite local restaurants. Cooked without the bad stuff, see nutrition facts and photos, filter for low carb, gluten free, paleo and more!
+
+Available in San Francisco.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="enterprise"
+                    data-product-type-val="hardware"
+                    data-business-model-val="ecommerce"
+                    data-industry-val="informationtechnology">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/estimote/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/estimote_BuqHp2q.png" alt="Estimote"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>Estimote</h3>
+                                <div class="fund-details-list">Information Technology</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Real-world context for your apps</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="consumer"
+                    data-product-type-val="hardware"
+                    data-business-model-val="ecommerce"
+                    data-industry-val="consumerelectronics">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/bionym/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/nymi.png" alt="Nymi"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>Nymi</h3>
+                                <div class="fund-details-list">Consumer Electronics</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Wearable wristband device that provides identity as a service via person&#39;s unique cardiac rhythm (ECG)</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="consumer"
+                    data-product-type-val="software"
+                    data-business-model-val="subscription"
+                    data-industry-val="healthandmedicine">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/truevault/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/truevault.png" alt="TrueVault"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>TrueVault</h3>
+                                <div class="fund-details-list">Health &amp; Medicine</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Secure API to store health data</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="consumer"
+                    data-product-type-val="software"
+                    data-business-model-val="ecommerce"
+                    data-industry-val="personalcareandservices">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/bloomthat/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/bloom-that.png" alt="BloomThat"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>BloomThat</h3>
+                                <div class="fund-details-list">Personal Care &amp; Services</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">The easiest way to order fresh flowers</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="consumer"
+                    data-product-type-val="hardware"
+                    data-business-model-val="ecommerce"
+                    data-industry-val="music">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/beep/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/beep.png" alt="Beep"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>Beep</h3>
+                                <div class="fund-details-list">Music</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Stream your music to every room in your home. Simple. Wireless. Affordable.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="enterprise"
+                    data-product-type-val="software"
+                    data-business-model-val="ecommerce"
+                    data-industry-val="informationtechnology">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/anyperk/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/Anyperk.png" alt="AnyPerk"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>AnyPerk</h3>
+                                <div class="fund-details-list">Information Technology</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Platform for employers to offer employee perks &amp; discounts </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="consumer"
+                    data-product-type-val="software"
+                    data-business-model-val="ecommerce"
+                    data-industry-val="transportationandlogistics">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/rickshaw/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/rickshaw.png" alt="Rickshaw"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>Rickshaw</h3>
+                                <div class="fund-details-list">Transportation &amp; Logistics</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Rickshaw is a same-day local delivery platform that makes it simple for businesses to provide fast, dependable, high-touch deliveries to their customers.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="enterprise"
+                    data-product-type-val="hardware"
+                    data-business-model-val="ecommerce"
+                    data-industry-val="materialscience">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/oti-lumionics/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/oti.png" alt="OTI Lumionics"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>OTI Lumionics</h3>
+                                <div class="fund-details-list">Materials Science</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">New and unique approach to producing the organic light‐emitting diodes (OLEDs)--the next generation of LEDs</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="consumer"
+                    data-product-type-val="software"
+                    data-business-model-val="ecommerce"
+                    data-industry-val="retail">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/memebox/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/memebox_LHrFtP9.png" alt="Memebox"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>Memebox</h3>
+                                <div class="fund-details-list">Retail</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Memebox is a rapidly-growing, leading e-commerce beauty retailer born in Seoul, currently headquartered in Palo Alto, California.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="consumer"
+                    data-product-type-val="software"
+                    data-business-model-val="peertopeer"
+                    data-industry-val="education">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/airpair/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/Airpair.png" alt="Airpair"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>Airpair</h3>
+                                <div class="fund-details-list">Education</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">The fastest way to get software help. Pay as you go remote consulting &amp; expert pair programming help through video &amp; screen sharing.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="consumer"
+                    data-product-type-val="hardware"
+                    data-business-model-val="ecommerce"
+                    data-industry-val="healthandmedicine">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/bellabeat/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/bellabeat.png" alt="Bellabeat"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>Bellabeat</h3>
+                                <div class="fund-details-list">Health &amp; Medicine</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">The Bellabeat allows you to connect with your unborn baby and share your experience with friends, family and other future moms.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="enterprise"
+                    data-product-type-val="software"
+                    data-business-model-val="subscription"
+                    data-industry-val="informationtechnology">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/unbabel/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/Unbabel.png" alt="Unbabel"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>Unbabel</h3>
+                                <div class="fund-details-list">Palantir for language translation</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Unbabel's mission is to enable seamless, trustworthy, written communication in different languages in the $34 billion translation industry, the peer economy and the global SME markets are underserved.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="enterprise"
+                    data-product-type-val="software"
+                    data-business-model-val="subscription"
+                    data-industry-val="foodandagriculture">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/terravion/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/terravion.png" alt="TerrAvion"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>TerrAvion</h3>
+                                <div class="fund-details-list">Google Maps for agriculture</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">TerrAvion provides high revisit rate aerial imagery for agriculture. Our &quot;Overview&quot; service offering focuses on high value crops in California like grapes and almonds.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="enterprise"
+                    data-product-type-val="software"
+                    data-business-model-val="subscription"
+                    data-industry-val="communications">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/weave/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/Weave.png" alt="Weave"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>Weave</h3>
+                                <div class="fund-details-list">Communications</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Better phone service for your dental practice that syncs with your dental software to increase efficiency and maximize revenue opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="enterprise"
+                    data-product-type-val="software"
+                    data-business-model-val="transactionprocessing"
+                    data-industry-val="financialtechnology">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/abacus/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/Abacus.png" alt="Abacus"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>Abacus</h3>
+                                <div class="fund-details-list">Financial Technology</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Abacus is a simple, fast way for businesses to reimburse their employees for company expenses.
+
+They are re-imagining from the ground up how expense reporting would have worked if it had been born mobile. Kind of like expense reports... without the...</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="consumer"
+                    data-product-type-val="software"
+                    data-business-model-val="ecommerce"
+                    data-industry-val="retail">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/hd-trade-services/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/Zentail_lYraVm3.png" alt="Zentail"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>Zentail</h3>
+                                <div class="fund-details-list">Retail</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">[FKA HD Trade Services] Logistics technology</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="enterprise"
+                    data-product-type-val="software"
+                    data-business-model-val="ecommerce"
+                    data-industry-val="informationtechnology">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/rainforest/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/rainforest_aYgJ2LQ.png" alt="Rainforest"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>Rainforest</h3>
+                                <div class="fund-details-list">Information Technology</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">QA testing as a service.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="consumer"
+                    data-product-type-val="software"
+                    data-business-model-val="ecommerce"
+                    data-industry-val="realestate">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/lovely/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/lovely.png" alt="Lovely"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>Lovely</h3>
+                                <div class="fund-details-list">Real Estate</div>
+                                
+                                    <label class="label label-success">Acquired</label>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Lovely is an apartment rental marketplace. Acquired by RentPath</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="consumer"
+                    data-product-type-val="software"
+                    data-business-model-val="advertising"
+                    data-industry-val="adtech">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/virool/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/Virool.png" alt="Virool"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>Virool</h3>
+                                <div class="fund-details-list">Ad Tech</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Virool is a social video advertising platform that allows video creators to reach millions of viewers.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="consumer"
+                    data-product-type-val="hardware"
+                    data-business-model-val="ecommerce"
+                    data-industry-val="consumerelectronics">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/boosted/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/boosted_YpXnEe1.png" alt="Boosted"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>Boosted</h3>
+                                <div class="fund-details-list">Consumer Electronics</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Ultraportable electric vehicle company revolutionizing transportation</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="consumer"
+                    data-product-type-val="software"
+                    data-business-model-val="ecommerce"
+                    data-industry-val="consumerelectronics">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/circuitlab/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/pantelligent.png" alt="Pantelligent"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>Pantelligent</h3>
+                                <div class="fund-details-list">Consumer Electronics</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Smart frying pan. Cook everything perfectly, every time. </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="enterprise"
+                    data-product-type-val="software"
+                    data-business-model-val="licensing"
+                    data-industry-val="healthandmedicine">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/drchrono/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/dr-chrono.png" alt="drchrono"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>drchrono</h3>
+                                <div class="fund-details-list">Health &amp; Medicine</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Electronic health records and billing on the tablet.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="consumer"
+                    data-product-type-val="software"
+                    data-business-model-val="ecommerce"
+                    data-industry-val="foodandagriculture">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/goldbely/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/goldbely_2jmcOS9.png" alt="Goldbely"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>Goldbely</h3>
+                                <div class="fund-details-list">Specialty Food Marketplace</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Goldbely discovers America's best foods and ships them nationwide.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="enterprise"
+                    data-product-type-val="software"
+                    data-business-model-val="subscription"
+                    data-industry-val="financialtechnology">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/indinero/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/indinero_NdSNudX.png" alt="inDinero"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>inDinero</h3>
+                                <div class="fund-details-list">Financial Technology</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Full service accounting online</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-4 fund-summary"
+                    data-customer-type-val="consumer"
+                    data-product-type-val="software"
+                    data-business-model-val="ecommerce"
+                    data-industry-val="retail">
+                <div class="partnership-card">
+                    <div class="fund-basic-info-section partnership-card-section">
+                        <a href="/companies/letote/">
+                            
+                            <div class="fund-logo">
+                                <img src="https://d2aezjsmcp2rsz.cloudfront.net/companylogos/le-tote.png" alt="LE TOTE"/>
+                            </div>
+
+                            <div class="titles">
+                                <h3>LE TOTE</h3>
+                                <div class="fund-details-list">Retail</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fund-info-section partnership-card-section">
+                        <p class="blurb">Netflix for women&#39;s fashion</p>
+                    </div>
+                </div>
+            </div>

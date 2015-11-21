@@ -1,0 +1,11 @@
+{{current_user}} you are following these investors: ->
+
+<ul>
+  <li ng-repeat = "person in follower">
+      <ul>
+        <li ng-repeat = "investor in person.follow_investor">
+          {{investor.investor_company}}
+        </li>
+      </ul>
+  </li>
+</ul>

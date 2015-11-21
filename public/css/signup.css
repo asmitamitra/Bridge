@@ -1,0 +1,36 @@
+#main-slider {
+visibility: hidden;
+height:0px;
+}
+
+.sign-btn {
+	width: 35%; 
+	height: 40px;
+	font-size: 18px; 
+	color: white;
+	background: -webkit-linear-gradient(#f45d7a, #ea274c); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#f45d7a, #ea274c); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#f45d7a, #ea274c); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#f45d7a, #ea274c);
+}
+
+.sign-btn:hover {
+
+	color: white;
+	background: #ea274c;
+
+}
+
+.signup{
+	
+padding-top:10px;
+height: 60px;
+text-align: center;
+}
+
+.login{
+background: #E1E1E1;
+padding-top:10px;
+height: 60px;
+text-align: center;
+}

@@ -1,0 +1,117 @@
+
+<link rel="stylesheet" href="css/signup.css" />
+<link rel="stylesheet" href="css/login.css">
+
+<br /><br /><br />
+
+ <div class="row">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-1
+                col-md-6 col-md-offset-2 col-lg-6 col-lg-offset-3">
+        <div class="partnership-card">
+            <div style="font-size: 24px" class="tabs clearfix">
+                
+                    <div class="signup col-xs-6">
+                        <span class="hidden-xs">Create Account</span>
+                        <span class="visible-xs">Sign Up</span>
+                    </div>
+                    
+                        <a class="login background col-xs-6" href="/signin">
+                            Login
+                        </a>
+                    
+                
+            </div>
+
+            <div class="partnership-card-section">
+                
+                    <p class="instructions">
+                        Join FundersClub today! FundersClub is the world's first online venture capital firm and a community of investors, entrepreneurs and enthusiasts of private investing. To get started, choose your preferred login method:
+                    </p>
+                
+                
+                    <div class="social-buttons">
+                        
+                        <div class="social-button">
+                            <a class="btn linkedin" href="/accounts/linkedin/login/?next=%2Faccounts%2Fpost-login%2F" data-track-click="linkedin-signup">
+                                <i class="fa fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+
+                        <div class="social-button">
+                            <a class="btn facebook" href="/accounts/facebook/login/?method=oauth2&next=%2Faccounts%2Fpost-login%2F" data-track-click="fb-signup">
+                                <i class="fa fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                        </div>
+
+                        <div class="social-button">
+                            <a class="btn google" href="/accounts/google/login/?method=oauth2&next=%2Faccounts%2Fpost-login%2F" data-track-click="google-signup">
+                                <i class="fa fa-google"></i>
+                                <span>Google</span>
+                            </a>
+                        </div>
+                    </div>
+                
+                <form data-signup-form class="form">
+                    
+                        <p>Or, sign up with:</p>
+                    
+                    <input type='hidden' name='csrfmiddlewaretoken' value='AJyNISrzbeI6F2PrHV0hiZY57as81gRY' />
+
+                    
+                    
+                    <div class="form-group first-name
+                            "><input type="username" name="username"
+                                class="form-control input-lg"
+                                placeholder="First Name" id="username" ng-model="user.username"
+                                value=""></div><div class="form-group last-name
+                            ">
+                      <input type="text" name="company"
+                                class="form-control input-lg"
+                                placeholder="Startup Name" id="company"
+                                ng-model="user.company" value="" /></div>
+                                <div class="form-group loc">
+                      <input type="text" name="loc"
+                                class="form-control input-lg"
+                                placeholder="Location" id="loc"
+                                ng-model="user.loc" value="" />
+                                
+                    </div>
+                    <div class="form-group industry">
+                    	  <input type="text" name="industry"
+                                class="form-control input-lg"
+                                placeholder="Industry" id="industry"
+                                ng-model="user.industry" value="" />
+                    
+                    
+                    </div>
+                    
+                    <div class="form-group pitch-line">
+                    	  <input type="text" name="pitch_line"
+                                class="form-control input-lg"
+                                placeholder="Pitch Line" id="pitch_line"
+                                ng-model="user.pitch_line" value="" />
+                    
+                    
+                    </div>
+                    
+                    <div class="form-group
+                            "><input type="email" name="email" class="form-control input-lg"
+                                placeholder="Email address" id="email"
+                                value="" ng-model="user.email"></div><div class="form-group
+                                "><input type="password" name="pwd" placeholder="Password"
+                                    class="form-control input-lg"  ng-model="password"></div><div class="form-group
+                                "><input type="password" name="password2" placeholder="Verify Password" ng-model="user.password"
+                                    class="form-control input-lg"></div><input name="mixpanel_anonymous_id" type="hidden" value=""><button ng-click="signup();" class="btn btn-warning btn-block no-margins"
+                            type="submit" data-signup-submit>
+                        Sign Up
+                        <i data-signup-spinner class="fa fa-cog fa-spin"
+                                style="display: none"></i></button>
+                </form>
+            </div>
+        </div>
+    
+</div></div>
+        </div>
+    </div>

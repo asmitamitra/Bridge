@@ -1,0 +1,187 @@
+<link rel="stylesheet" href="stylesheets/signup.css">
+<link rel="stylesheet" href="stylesheets/eprofile.css">
+      		<div class="nav">
+    				<ul class="clearfix">
+
+						<li ng-click="browse()"><img  src="./images/icons/search.png" ></li>
+                		<li><img  src="./images/icons/bell.svg" ></li>
+						<li><img  src="./images/icons/mail.svg" ></li>
+            <li ng-click="lookfollow()">Following Investors</li>
+						<li><p style="padding-top: 10px;">{{current_user}}</br>Entrepreneur</p>
+								<!--  <ul class="profile_op" >
+														<li style="clear:both;"><p>Profile</p></li>
+														<li style="clear:both;"><p>Accounts</p></li>
+														<li style="clear:both;"><p>Sign out</p></li>
+								</ul>  -->
+						</li>
+					</ul>
+			</div>
+            	<div class="nav2">
+										<ul class="clearfix">
+											<li><a href"#">Workspace</a></li>
+											<li><a href"#">Reports</a></li>
+											<li><a href"#">Company Profile</a></li>
+										</ul>
+							</div>
+
+
+  	<div class="body-content">
+
+            <!--<div class="nav3">
+            	<ul class="clearfix">
+                	<li><a href="#"><img src="images/icons/search1.png"></a></li>
+					<li><a href="#"><img src="images/icons/bell.png"></a></li>
+                    <li><a href="#"><img src="images/icons/mail.png"></a></li>
+                </ul>
+            </div>
+            -->
+            <div class="banner">
+
+  			</div>
+
+  			<div class="sidemenu">
+    					<div class="top1">
+    							<a href="#">a</a>
+    							<h2>Company</h2>
+    							<p align="center">Add a one-line pitch that highlights your unique selling proposition.</p>
+    					</div>
+
+  					<div class="top2">
+  							<table id="prof_table" >
+  								<tr>
+  									<td>Stage</td>
+  									<td colspan="3">1111</td>
+  								</tr>
+  								<tr>
+  									<td>Industry</td>
+  									<td colspan="3">1111</td>
+  								</tr>
+  									<tr>
+  									<td>Location</td>
+  									<td colspan="3">1111</td>
+  								</tr>
+  								<tr>
+  									<td>Curency</td>
+  									<td colspan="3">1111</td>
+  								</tr>
+  								<tr>
+  									<td>Founded</td>
+  									<td colspan="3">1111</td>
+  								</tr>
+  								<tr>
+  									<td>Employees</td>
+  									<td colspan="3">1111</td>
+  								</tr>
+  								<tr>
+  									<td>Website</td>
+  									<td colspan="3">1111</td>
+  								</tr>
+  								<tr >
+  										<td colspan="4"><a href="#">Share Your Profile</a></td>
+  								</tr>
+  								</table>
+  					</div>
+
+  			</div>
+
+						<div class="contact">
+					<div class="edit"><span id='clickableAwesomeFont'><i class="fa fa-pencil-square-o"></i></span></div>
+					<p style="font-size:30px;">Contact</p>
+							<p style="font-size:15px; margin-top:-40px;">Add your company's contact information.</p>
+			</div>
+
+			<div class="nav3">
+					<ul class="clearfix">
+											<li><a href="#">Overview</a></li>
+											<li><a href="#">Pitch Deck</a></li>
+											<li><a href="#">Executive Summary</a></li>
+											<li><a href="#">Financials</a></li>
+											<li><a href="#">Documents</a></li>
+										</ul>
+							</div>
+
+				<div class="rightsec">
+						<div class="summary">
+						<div class="edit"><span id='clickableAwesomeFont'><i class="fa fa-pencil-square-o"></i></span></div>
+							<p>Company Summary</p>
+
+							<p>Tell the world who you are and what makes your </br>company special</p>
+							<img src="./images/icons/empty.png">
+						</div>
+
+						<div class="wholevideo">
+								<div class="video">
+										<img src="./images/bground/videoback.png">
+
+								</div>
+								<div class="play">
+										<img src="./images/bground/play_icon.png">
+								</div>
+								<div class="over"><p>Increase the impact of your profile by uploading a short pitch video</p></div>
+								<div class="but"><span id='clickableAwesomeFont'><i class="fa fa-upload"></i>&nbsp;Upload</span></div>
+						</div>
+
+						<div class="team">
+						<div class="edit"><span id='clickableAwesomeFont'><i class="fa fa-pencil-square-o"></i></span><span id='clickableAwesomeFont'><i class="fa fa-plus-square-o"></i></span></div>
+							<p style="font-size:30px;">Team</p>
+								<div class="teampart">
+
+									<table id="prof_table">
+
+										<tr >
+											<td ><p  style="	width:30px;
+														text-align:center;
+														font-size:25px;
+														padding:15px;
+														border:1px solid #ffad78;
+														border-radius:50%;
+														color:white;
+														background-color:#ffad79;">AS</p>
+											</td>
+											<td>{{current_user}}</td>
+											<td  > It is a long established fact that a reader will be </td>
+
+										</tr>
+
+									</table>
+								</div>
+						</div>
+
+						<div class="advisor">
+								<div class="edit"><span id='clickableAwesomeFont'><i class="fa fa-plus-square-o"></i></span></div>
+							<p style="font-size:30px;">Advisors</p>
+							<p>Add advisors to your profile.</p>
+								<table id="prof_table">
+									<tr>
+										<td><img src="./images/icons/dummyadvisor.png"></td>
+										<td><img src="./images/icons/dummyadvisor.png"></td>
+										<td><img src="./images/icons/dummyadvisor.png"></td>
+									</tr>
+								</table>
+
+						</div>
+						<div class="invest">
+							<div class="edit"><span id='clickableAwesomeFont'><i class="fa fa-plus-square-o"></i></span></div>
+							<p  style="font-size:30px;">Previous Investors</p>
+							  <p>Add previous investors, including family and friends.</p>
+								<table id="prof_table">
+									<tr>
+										<td><img src="./images/icons/dummyadvisor.png"></td>
+										<td><img src="./images/icons/dummyadvisor.png"></td>
+										<td><img src="./images/icons/dummyadvisor.png"></td>
+									</tr>
+								</table>
+
+						</div>
+
+				</div>
+
+
+
+
+		</div>
+
+
+
+
+  	</div>

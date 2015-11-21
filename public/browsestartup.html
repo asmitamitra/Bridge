@@ -1,0 +1,108 @@
+<link rel="stylesheet" href="stylesheets/signup.css">
+<link rel="stylesheet" href="stylesheets/main.css">
+<link rel="stylesheet" href="stylesheets/companyprofile.css">
+
+<style>
+.mainheader {
+  background-image: none;
+  height: 0%;
+}
+</style>
+    <div class="body-content">
+
+<div ng-repeat = "person in companies">
+  <div class="banner">
+<img src=" {{person.banner}}  ">
+</div>
+        <div class="sidemenu">
+    					<div class="top1">
+    							<a href="#">a</a>
+    							<h2>{{person.company}}</h2>
+    							<p align="center">{{person.pitch_line}}</p>
+    					</div>
+
+  					<div class="top2">
+  							<table id="prof_table" >
+  									<td>Industry</td>
+  									<td colspan="3">{{person.industry}}</td>
+  								</tr>
+  									<tr>
+  									<td>Location</td>
+  									<td colspan="3">{{person.loc}}</td>
+  								</tr>
+  								<tr>
+  									<td>Founded</td>
+  									<td colspan="3">{{person.username}}</td>
+  								</tr>
+  								<tr >
+  										<td colspan="4"><a href="#">Share Your Profile</a></td>
+  								</tr>
+  								</table>
+  					</div>
+
+  			</div>
+
+						<div class="contact">
+					<div class="edit"><span id='clickableAwesomeFont'><i class="fa fa-pencil-square-o"></i></span></div>
+					<p style="font-size:30px;">Contact</p>
+							<p style="font-size:15px; margin-top:-40px;">{{person.email}}</p>
+			</div>
+
+			<div class="nav3">
+					<ul class="clearfix">
+											<li><a href="#">Overview</a></li>
+											<li><a href="#">Pitch Deck</a></li>
+											<li><a href="#">Executive Summary</a></li>
+											<li><a href="#">Financials</a></li>
+											<li><a href="#">Documents</a></li>
+										</ul>
+							</div>
+
+				  <div class="rightsec">
+						<div class="summary">
+						<div class="edit"><span id='clickableAwesomeFont'><i class="fa fa-pencil-square-o"></i></span></div>
+							<p>Company Summary</p>
+
+							<p>{{person.pitch_line}} </br></p>
+							<!--<img src="./images/icons/empty.png">-->
+
+
+						</div>
+
+						<div class="team">
+						<div class="edit"><span id='clickableAwesomeFont'><i class="fa fa-pencil-square-o"></i></span><span id='clickableAwesomeFont'><i class="fa fa-plus-square-o"></i></span></div>
+							<p style="font-size:30px;"><br>Team</p>
+								<div class="teampart">
+
+									<table id="prof_table">
+
+										<tr >
+											<td ><p  style="	width:30px;
+														text-align:center;
+														font-size:25px;
+														padding:15px;
+														border:1px solid #ffad78;
+														border-radius:50%;
+														color:white;
+														background-color:#ffad79;">AS</p>
+											</td>
+											<td>{{person.username}}</td>
+											<td  ></td>
+
+										</tr>
+
+									</table>
+								</div>
+						</div>
+				</div>
+
+
+
+
+		</div>
+
+
+
+
+  	</div>
+</div>
